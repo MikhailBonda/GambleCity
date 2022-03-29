@@ -1,0 +1,112 @@
+a {text-decoration:none;}
+
+.gain-center{
+  transition: 1s; /* Время эффекта */
+  text-align: center; 
+}
+.gain-center:hover {
+  transform: scale(1.2); /* Увеличиваем масштаб */
+}
+
+.shadow:hover 
+{
+box-shadow:0 0 6px 6px #555; 
+-webkit-transition: all 0.5s ease;
+-moz-transition: all 0.5s ease;
+transition: all 0.5s ease;
+}
+
+hr {
+border: 0;
+height: 1px;
+background: #000;
+background-image: -webkit-linear-gradient(left, #000, #fff,#000);
+background-image: -moz-linear-gradient(left, #000, #fff, #000);
+background-image: -ms-linear-gradient(left, #000, #fff,#000);
+background-image: -o-linear-gradient(left, #000, #fff, #000);
+}
+
+* { box-sizing: border-box; }
+header a {
+  text-decoration: none;
+  outline: none;
+  display: block;
+  transition: .3s ease-in-out;
+}
+
+nav {
+  display: table;
+  margin: 0 auto;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.topmenu:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.topmenu > li {
+  width: 25%;
+  float: left;
+  position: relative;
+  font-family: 'Open Sans', sans-serif;
+}
+.topmenu > li > a {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+  color: grey;
+  padding: 15px 30px;
+}
+.topmenu li a:hover { color: #D5B45B; }
+.submenu-link:after {
+  content: "\f107";
+  font-family: "FontAwesome";
+  color: inherit;
+  margin-left: 10px;
+}
+.submenu {
+  background: #273037;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  z-index: 5;
+  width: 180px;
+  opacity: 0;
+  transform: scaleY(0);
+  transform-origin: 0 0;
+  transition: .5s ease-in-out;
+}
+.submenu a {
+  color: white;
+  text-align: left;
+  padding: 12px 15px;
+  font-size: 13px;
+  border-bottom: 1px solid rgba(255,255,255,.1);
+}
+.submenu li:last-child a { border-bottom: none; }
+.topmenu > li:hover .submenu {
+  opacity: 1;
+  transform: scaleY(1);
+}
+
+.menu {
+    padding: 0; /* Убираем поля по умолчанию */
+   }
+   .menu li {
+    display: inline-block; /* Пункты меню по горизонтали */
+   }
+   .menu a {
+    color: grey; /* Цвет ссылок */
+    padding:5px; /* Поля вокруг текста */
+    text-decoration: none; /* Убираем подчёркивание */
+    display: block; /* Блочная ссылка */
+    white-space: nowrap; /* Запрещаем перенос текста */
+   }
+   .menu a:hover {
+    color: #D5B45B; /* Цвет фона при наведении */
+   }
+
